@@ -8,6 +8,41 @@
 
 ---
 
+Multi-Agent
+
+```mermaid
+mindmap
+  root((OrchestrAI Workflow))
+    Setup
+      Python venv & dependencies
+      Docker & Kafka
+      ML Model Weights
+      ngrok (for public API access)
+    Pipeline
+      Lint Agent
+        ML-powered code analysis
+        HTML/JSON report
+      Test Agent
+      Build Agent
+      Security Agent
+    Orchestrator
+      Enforces stage order
+      Listens to Kafka
+      Triggers agents
+    Dashboard
+      React UI
+      Real-time status
+      View reports
+    Communication
+      Kafka topics
+      JSON serialization
+    User
+      Triggers pipeline
+      Views dashboard
+      Downloads reports
+```
+
+
 ## Key Features
 
 - **ML-Powered Lint Agent**
@@ -56,35 +91,28 @@ graph TD
 ## Workflow Mind Map
 
 ```mermaid
-mindmap
-  root((OrchestrAI Workflow))
-    Setup
-      Python venv & dependencies
-      Docker & Kafka
-      ML Model Weights
-      ngrok (for public API access)
-    Pipeline
-      Lint Agent
-        ML-powered code analysis
-        HTML/JSON report
-      Test Agent
-      Build Agent
-      Security Agent
-    Orchestrator
-      Enforces stage order
-      Listens to Kafka
-      Triggers agents
-    Dashboard
-      React UI
-      Real-time status
-      View reports
-    Communication
-      Kafka topics
-      JSON serialization
-    User
-      Triggers pipeline
-      Views dashboard
-      Downloads reports
+flowchart TD
+    A[GitHub repo push or pull triggers pipeline] --> B[Orchestrator receives request]
+    B --> C[Orchestrator sends code to Lint Agent]
+    C --> D[Lint Agent ML-powered analyzes code]
+    D --> E[Lint Agent sends results to Kafka]
+    E --> F[Orchestrator receives lint results]
+    F -- Lint Success --> G[Test Agent runs]
+    F -- Lint Fails --> Z[Pipeline stops, error reported]
+    G --> H[Test Agent sends results to Kafka]
+    H --> I[Orchestrator receives test results]
+    I -- Test Success --> J[Build Agent runs]
+    I -- Test Fails --> Z
+    J --> K[Build Agent sends results to Kafka]
+    K --> L[Orchestrator receives build results]
+    L -- Build Success --> M[Security Agent runs]
+    L -- Build Fails --> Z
+    M --> N[Security Agent sends results to Kafka]
+    N --> O[Orchestrator receives security results]
+    O -- Security Success --> P[Pipeline complete, success reported]
+    O -- Security Fails --> Z
+    P --> Q[Dashboard displays all results and reports]
+    Z --> Q
 ```
 
 ---
@@ -112,7 +140,7 @@ mindmap
 
 ### 2. Clone & Environment Setup
 ```bash
-git clone https://github.com/yourusername/Orchestr_AI.git
+git clone https://github.com/adhi982/Orchestr_AI.git
 cd Orchestr_AI
 python -m venv venv
 source venv/bin/activate  # or .\venv\Scripts\activate on Windows
