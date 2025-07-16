@@ -1,0 +1,46 @@
+cd "E:\Github-adhi982\DevOps-agent\sample-project"
+git add .
+git commit -m "new update"
+git push origin main
+
+   .\venv\Scripts\Activate.ps1
+
+uvicorn orchestrator.main:app --reload --host 0.0.0.0 --port 8000
+
+uvicorn orchestrator.main:app --host 0.0.0.0 --port 8000
+
+python run_orchestrator.py
+
+
+
+python agents/lint_agent/main.py
+
+
+python agents/test_agent/main.py
+
+
+python agents/build_agent/main.py
+
+
+python agents/security_agent/main.py
+
+$response = Invoke-WebRequest -Uri http://localhost:8000/pipeline/9b1acf4b/full
+
+$response.Content | ConvertFrom-Json | ConvertTo-Json -Depth 10
+
+curl http://localhost:8000/pipeline/7a6a0c48/full
+
+
+your-python-project/
+├── src/
+│   ├── __init__.py
+│   ├── main.py
+│   └── utils.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_main.py
+│   └── test_utils.py
+├── requirements.txt
+├── Dockerfile
+├── .pylintrc (optional)
+└── pytest.ini (optional)

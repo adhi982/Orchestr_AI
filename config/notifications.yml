@@ -1,0 +1,44 @@
+# Orchestrator Notification Configuration
+
+# Slack notification settings
+slack:
+  enabled: true
+  
+  # Default notification levels:
+  # - all: Send notifications for all events
+  # - success: Send notifications only for successful completions
+  # - failure: Send notifications only for failures
+  # - complete: Send notifications only for pipeline completion (success or failure)
+  default_level: all
+  
+  # Channel mapping - which channels to use for different events
+  channels:
+    default: "#devops-pipeline"
+    failures: "#devops-alerts"
+    security: "#security-alerts"
+  
+  # Customize per project
+  projects:
+    my-critical-project:
+      level: all
+      channel: "#critical-project-alerts"
+
+# Retry settings
+retry:
+  enabled: true
+  max_attempts: 3
+  delay_seconds: 60
+  
+  # Configure which stages should be retried if they fail
+  stages:
+    lint: true
+    test: true
+    build: true
+    security: true
+
+# Data retention settings
+retention:
+  # How long to keep pipeline data (in hours)
+  pipeline_history_hours: 24
+  # How often to clean up old data (in minutes)
+  cleanup_interval_minutes: 60

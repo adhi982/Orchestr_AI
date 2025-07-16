@@ -1,0 +1,181 @@
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyPI distribution artifacts
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+wheelhouse
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+pytest_output.log
+pylint_output.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.vs/
+
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.svg
+*.ico
+*.webp
+*.raw
+*.psd
+*.ai
+*.eps
+
+# Video files
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4v
+
+# Audio files
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+*.wma
+*.m4a
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# DevOps-Orchestrator specific
+*.log
+*.log.*
+.env
+*.pem
+temp/
+trivy_output.log
+trivy.db*
+*.tmp
+/security_scan_*
+
+# Large files and ML models
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pb
+*.onnx
+checkpoints/
+models/
+model.safetensors
+optimizer.pt
+
+# Archives and compressed files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+*.gz
+*.bz2
+
+# Kafka and Zookeeper data directories
+/kafka-data/
+/zookeeper-data/
+
+# Temporary directories created by agents
+lint_*/
+test_*/
+build_*/
+security_*/
+temp_*/
+
+# Local configuration files
+local_config.yml
+local_settings.py
+
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+docker/kafka/data/
+docker/zookeeper/data/
+docker/zookeeper/log/

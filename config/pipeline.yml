@@ -1,0 +1,63 @@
+---
+# DevOps Pipeline Orchestrator Configuration
+# This file defines the pipeline structure and behavior
+
+pipeline:
+  name: "default-pipeline"
+  
+  # Pipeline execution mode
+  execution_mode: "sequential"  # Options: "sequential" or "parallel"
+  
+  # Define the pipeline stages
+  stages:
+    - name: "lint"
+      timeout: 600  # 10 minutes in seconds
+      retries: 2
+      allow_failure: false
+      tools:
+        - pylint
+        - gemini
+      gemini:
+        enabled: true
+        model: "gemini-1.5-pro"
+        max_tokens: 4000
+        temperature: 0.1
+        max_files_per_analysis: 10
+        include_suggestions: true
+        include_security_analysis: true
+      
+    - name: "test"
+      timeout: 900  # 15 minutes in seconds
+      retries: 1
+      dependencies:
+        - "lint"
+      allow_failure: false
+        
+    - name: "build"
+      timeout: 1200  # 20 minutes in seconds
+      retries: 1
+      dependencies:
+        - "test"
+      environment:
+        DOCKER_REGISTRY: "my-registry.example.com"
+      
+    - name: "security"
+      timeout: 1500  # 25 minutes in seconds
+      retries: 0
+      dependencies:
+        - "build"
+      allow_failure: true  # Don't fail the pipeline if security scan has issues
+  
+  # Global pipeline settings
+  timeout: 3600  # Overall pipeline timeout in seconds
+  retry_on_failure: true
+  max_retries: 3
+  
+  # Notification settings
+  notifications:
+    slack_webhook: ""  # Will be overridden by env var
+    notify_on_success: true
+    notify_on_failure: true
+
+# Repository-specific overrides can be added in:
+# config/pipelines/<repository-name>.yml
