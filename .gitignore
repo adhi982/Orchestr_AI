@@ -159,7 +159,7 @@ optimizer.pt
 /zookeeper-data/
 
 # Temporary directories created by agents
-
+agents/security_agent/trivy.exe
 temp_*/
 
 # Local configuration files
