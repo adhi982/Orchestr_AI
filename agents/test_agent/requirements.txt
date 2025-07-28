@@ -1,0 +1,6 @@
+# Test Agent Dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+gitpython>=3.1.30
+kafka-python>=2.0.2
+python-dotenv>=1.0.0

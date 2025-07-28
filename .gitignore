@@ -159,10 +159,7 @@ optimizer.pt
 /zookeeper-data/
 
 # Temporary directories created by agents
-lint_*/
-test_*/
-build_*/
-security_*/
+
 temp_*/
 
 # Local configuration files

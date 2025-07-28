@@ -1,0 +1,351 @@
+{
+  "builder_name": "arrow",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "clean_code",
+  "dataset_size": 29415279411,
+  "description": "",
+  "download_checksums": {
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00000-of-00059.arrow": {
+      "num_bytes": 416642992,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00001-of-00059.arrow": {
+      "num_bytes": 455212296,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00002-of-00059.arrow": {
+      "num_bytes": 462844536,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00003-of-00059.arrow": {
+      "num_bytes": 436471024,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00004-of-00059.arrow": {
+      "num_bytes": 310253928,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00005-of-00059.arrow": {
+      "num_bytes": 347170312,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00006-of-00059.arrow": {
+      "num_bytes": 502725656,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00007-of-00059.arrow": {
+      "num_bytes": 526908864,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00008-of-00059.arrow": {
+      "num_bytes": 410498808,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00009-of-00059.arrow": {
+      "num_bytes": 644488912,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00010-of-00059.arrow": {
+      "num_bytes": 734215568,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00011-of-00059.arrow": {
+      "num_bytes": 736396344,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00012-of-00059.arrow": {
+      "num_bytes": 730222472,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00013-of-00059.arrow": {
+      "num_bytes": 451752776,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00014-of-00059.arrow": {
+      "num_bytes": 424036824,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00015-of-00059.arrow": {
+      "num_bytes": 423705704,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00016-of-00059.arrow": {
+      "num_bytes": 420464608,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00017-of-00059.arrow": {
+      "num_bytes": 420179592,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00018-of-00059.arrow": {
+      "num_bytes": 446361352,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00019-of-00059.arrow": {
+      "num_bytes": 636496496,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00020-of-00059.arrow": {
+      "num_bytes": 425017120,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00021-of-00059.arrow": {
+      "num_bytes": 425044480,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00022-of-00059.arrow": {
+      "num_bytes": 423511920,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00023-of-00059.arrow": {
+      "num_bytes": 423834152,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00024-of-00059.arrow": {
+      "num_bytes": 423047344,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00025-of-00059.arrow": {
+      "num_bytes": 416791960,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00026-of-00059.arrow": {
+      "num_bytes": 422687296,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00027-of-00059.arrow": {
+      "num_bytes": 430130816,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00028-of-00059.arrow": {
+      "num_bytes": 421796728,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00029-of-00059.arrow": {
+      "num_bytes": 426388008,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00030-of-00059.arrow": {
+      "num_bytes": 423861928,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00031-of-00059.arrow": {
+      "num_bytes": 424291800,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00032-of-00059.arrow": {
+      "num_bytes": 424520016,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00033-of-00059.arrow": {
+      "num_bytes": 427051832,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00034-of-00059.arrow": {
+      "num_bytes": 430727224,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00035-of-00059.arrow": {
+      "num_bytes": 426727056,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00036-of-00059.arrow": {
+      "num_bytes": 426883368,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00037-of-00059.arrow": {
+      "num_bytes": 432441208,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00038-of-00059.arrow": {
+      "num_bytes": 478887528,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00039-of-00059.arrow": {
+      "num_bytes": 379021704,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00040-of-00059.arrow": {
+      "num_bytes": 475234344,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00041-of-00059.arrow": {
+      "num_bytes": 437725808,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00042-of-00059.arrow": {
+      "num_bytes": 433442248,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00043-of-00059.arrow": {
+      "num_bytes": 422269544,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00044-of-00059.arrow": {
+      "num_bytes": 528678200,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00045-of-00059.arrow": {
+      "num_bytes": 732485024,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00046-of-00059.arrow": {
+      "num_bytes": 624618192,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00047-of-00059.arrow": {
+      "num_bytes": 880584280,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00048-of-00059.arrow": {
+      "num_bytes": 534572512,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00049-of-00059.arrow": {
+      "num_bytes": 530717760,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00050-of-00059.arrow": {
+      "num_bytes": 671269960,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00051-of-00059.arrow": {
+      "num_bytes": 501130216,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00052-of-00059.arrow": {
+      "num_bytes": 640993432,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00053-of-00059.arrow": {
+      "num_bytes": 540453832,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00054-of-00059.arrow": {
+      "num_bytes": 674534712,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00055-of-00059.arrow": {
+      "num_bytes": 690866984,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00056-of-00059.arrow": {
+      "num_bytes": 525283928,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00057-of-00059.arrow": {
+      "num_bytes": 566107504,
+      "checksum": null
+    },
+    "E:/Intel Fest/Fine Tune/datasets/clean_code/train/data-00058-of-00059.arrow": {
+      "num_bytes": 556351232,
+      "checksum": null
+    }
+  },
+  "download_size": 29417032264,
+  "features": {
+    "code": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "path": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "quality_prob": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "learning_prob": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "filename": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "kind": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 58832311675,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 29415279411,
+      "num_examples": 3450448,
+      "shard_lengths": [
+        69483,
+        64483,
+        64483,
+        81483,
+        80966,
+        58483,
+        57483,
+        69483,
+        40483,
+        40000,
+        40482,
+        40482,
+        40000,
+        56482,
+        69482,
+        68964,
+        70482,
+        70482,
+        49482,
+        56482,
+        68482,
+        69482,
+        69482,
+        69964,
+        70482,
+        69482,
+        69482,
+        69482,
+        69964,
+        69482,
+        69482,
+        68482,
+        68482,
+        69482,
+        67964,
+        64482,
+        69482,
+        65482,
+        68482,
+        68482,
+        59482,
+        40482,
+        40482,
+        51482,
+        24000,
+        54482,
+        55482,
+        55482,
+        40482,
+        58482,
+        53000,
+        51482,
+        47482,
+        50482,
+        35482,
+        57482,
+        51482,
+        56000,
+        1482
+      ],
+      "dataset_name": "clean_code"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

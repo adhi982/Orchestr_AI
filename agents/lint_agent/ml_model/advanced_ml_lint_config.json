@@ -1,0 +1,249 @@
+{
+  "ml_analysis": {
+    "max_tokens": 512,
+    "temperature": 0.3,
+    "confidence_threshold": 0.6,
+    "context_window": 10,
+    "batch_size": 4,
+    "analysis_depth": "deep",
+    "multi_prompt_analysis": true,
+    "reasoning_extraction": true
+  },
+  "learning": {
+    "feedback_weight": 0.7,
+    "pattern_learning_rate": 0.1,
+    "adaptation_threshold": 0.8,
+    "min_feedback_count": 5,
+    "learning_decay": 0.95,
+    "pattern_reinforcement": true,
+    "auto_adaptation": true
+  },
+  "personalization": {
+    "experience_weights": {
+      "beginner": {
+        "education": 1.5,
+        "warnings": 1.2,
+        "suggestions": 0.8,
+        "explanations": "detailed"
+      },
+      "intermediate": {
+        "education": 1.0,
+        "warnings": 1.0,
+        "suggestions": 1.0,
+        "explanations": "standard"
+      },
+      "expert": {
+        "education": 0.5,
+        "warnings": 0.8,
+        "suggestions": 1.3,
+        "explanations": "concise"
+      },
+      "architect": {
+        "education": 0.3,
+        "warnings": 0.6,
+        "suggestions": 1.5,
+        "explanations": "architectural"
+      }
+    },
+    "style_adaptation": true,
+    "learning_recommendations": true,
+    "role_based_filtering": true,
+    "preference_learning": true
+  },
+  "security": {
+    "scan_depth": "deep",
+    "vulnerability_db": "updated",
+    "custom_rules": [],
+    "threat_modeling": true,
+    "compliance_checks": [
+      "OWASP",
+      "SANS",
+      "CWE"
+    ],
+    "security_patterns": {
+      "injection_attacks": true,
+      "authentication_issues": true,
+      "authorization_flaws": true,
+      "cryptographic_weaknesses": true,
+      "sensitive_data_exposure": true
+    }
+  },
+  "performance": {
+    "optimization_level": "aggressive",
+    "memory_analysis": true,
+    "complexity_tracking": true,
+    "profiling_suggestions": true,
+    "algorithmic_improvements": true,
+    "resource_efficiency": true,
+    "scalability_analysis": true
+  },
+  "code_quality": {
+    "maintainability_score": true,
+    "complexity_metrics": true,
+    "design_patterns": true,
+    "solid_principles": true,
+    "code_smells": true,
+    "refactoring_suggestions": true,
+    "documentation_analysis": true
+  },
+  "project_analysis": {
+    "dependency_analysis": true,
+    "architecture_review": true,
+    "consistency_checks": true,
+    "cross_file_analysis": true,
+    "pattern_detection": true,
+    "technical_debt": true
+  },
+  "reporting": {
+    "format": "html",
+    "include_ml_reasoning": true,
+    "interactive_elements": true,
+    "trend_analysis": true,
+    "developer_insights": true,
+    "actionable_items": true,
+    "priority_matrix": true
+  },
+  "integration": {
+    "git_hooks": {
+      "pre_commit": true,
+      "pre_push": false,
+      "post_merge": true
+    },
+    "ci_cd": {
+      "github_actions": true,
+      "jenkins": true,
+      "gitlab_ci": true
+    },
+    "ide_support": {
+      "vscode": true,
+      "pycharm": true,
+      "sublime": false
+    },
+    "webhooks": {
+      "slack": false,
+      "teams": false,
+      "discord": false
+    }
+  },
+  "developer_profiles": {
+    "default": {
+      "experience_level": "intermediate",
+      "preferred_style": {
+        "line_length": 88,
+        "naming_convention": "snake_case",
+        "docstring_style": "google"
+      },
+      "learning_goals": [
+        "code_quality",
+        "security_awareness",
+        "performance_optimization"
+      ],
+      "feedback_history": [],
+      "skill_areas": [
+        "python",
+        "web_development",
+        "data_analysis"
+      ],
+      "project_roles": [
+        "developer"
+      ]
+    },
+    "security_expert": {
+      "experience_level": "expert",
+      "preferred_style": {
+        "security_focus": true,
+        "compliance_strict": true
+      },
+      "learning_goals": [
+        "advanced_security",
+        "threat_modeling",
+        "secure_coding"
+      ],
+      "skill_areas": [
+        "security",
+        "penetration_testing",
+        "compliance"
+      ],
+      "project_roles": [
+        "security_lead",
+        "reviewer"
+      ]
+    },
+    "performance_expert": {
+      "experience_level": "expert", 
+      "preferred_style": {
+        "performance_focus": true,
+        "optimization_aggressive": true
+      },
+      "learning_goals": [
+        "performance_tuning",
+        "scalability",
+        "profiling"
+      ],
+      "skill_areas": [
+        "performance",
+        "algorithms",
+        "systems"
+      ],
+      "project_roles": [
+        "performance_lead",
+        "architect"
+      ]
+    }
+  },
+  "project_conventions": {
+    "naming": {
+      "functions": "snake_case",
+      "classes": "PascalCase",
+      "constants": "UPPER_CASE",
+      "modules": "snake_case"
+    },
+    "documentation": {
+      "required_for_public": true,
+      "style": "google",
+      "examples_required": false
+    },
+    "testing": {
+      "coverage_minimum": 80,
+      "test_naming": "test_*",
+      "assertion_style": "pytest"
+    },
+    "imports": {
+      "group_ordering": [
+        "standard_library",
+        "third_party", 
+        "local"
+      ],
+      "max_line_length": 88,
+      "relative_imports": "discouraged"
+    }
+  },
+  "severity_weights": {
+    "critical": 1.0,
+    "major": 0.8,
+    "minor": 0.5,
+    "suggestion": 0.3,
+    "info": 0.1
+  },
+  "confidence_threshold": 0.6,
+  "max_issues_per_file": 25,
+  "learning_rate": 0.1,
+  "auto_fix": {
+    "enabled": false,
+    "safe_fixes_only": true,
+    "require_confirmation": true,
+    "backup_original": true
+  },
+  "notifications": {
+    "real_time": false,
+    "summary_reports": true,
+    "critical_alerts": true
+  },
+  "advanced_features": {
+    "context_learning": true,
+    "pattern_evolution": true,
+    "cross_project_insights": true,
+    "ai_explanations": true,
+    "predictive_analysis": true
+  }
+}
